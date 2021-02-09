@@ -1,0 +1,28 @@
+{
+  "name": "tablestyler.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export -o docs",
+    "start": "next start",
+    "start:local": "npx http-server ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eligeske/tablestyler.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eligeske/tablestyler.com/issues"
+  },
+  "homepage": "https://github.com/eligeske/tablestyler.com#readme",
+  "dependencies": {
+    "http-server": "^0.12.3",
+    "next": "^10.0.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}

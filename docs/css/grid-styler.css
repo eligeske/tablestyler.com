@@ -1,0 +1,318 @@
+@charset "utf-8";
+/* CSS Document */
+
+body  {
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	background: url(../images/black_linen_v2.png) repeat fixed 0 0 #3D3D3D;
+    font: 12px 'Lucida Grande',Arial,sans-serif;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #fff;
+}
+.twoColFixRt #container { 
+	width: 1060px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.twoColFixRt #sidebar1 {
+	float: right; /* since this element is floated, a width must be given */
+	width: 385px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	color: #393939;
+	padding: 15px 0;
+	background: none repeat scroll 0 0 #E9EAEE;
+   /* border-left: 2px solid #FFFFFF;
+	border-right: 2px solid #FFFFFF;
+	border-bottom: 2px solid #FFFFFF;*/
+	
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+    margin: 0 auto 25px;
+    text-align: center;
+	
+	-webkit-border-bottom-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+.twoColFixRt #mainContent { 
+	margin: 0 400px 0 0; /* the right margin on this div element creates the column down the right side of the page - no matter how much content the sidebar1 div contains, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends. */
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+} 
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+h1 { font-family:'Just Me Again Down Here'; font-size: 35px; }
+h1 span { font-size: 25px; }
+.titleText { font-size: 11px; }
+.box { overflow: hidden; }
+
+#tableCont { width: 575px; }
+.tableCont 	{
+	-moz-box-shadow: 0px 0px 5px 0px #1C1C1C;
+	-webkit-box-shadow: 0px 0px 5px 0px #1C1C1C;
+	box-shadow: 0px 0px 5px 0px #1C1C1C;
+	padding: 15px 10px;
+	background: none repeat scroll 0 0 #E9EAEE;
+	padding: 15px 10px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	border:1px solid #ccc; 
+
+}
+#theme-box { width: 575px; margin-top: 15px; padding: 10px; } 
+.theme-box { 
+	-moz-box-shadow: 0px 0px 2px 0px #383838;
+	-webkit-box-shadow: 0px 0px 2px 0px #383838;
+	box-shadow: 0px 0px 2px 0px #383838;
+	margin-right: 15px;
+	display: inline-block;
+	height: 55px; width: 60px;
+	cursor: pointer;
+	background: none repeat scroll 0 0 #fff;
+	border:none;
+	overflow: hidden; 
+	opacity:0.7;
+}
+	
+.theme-box:hover {
+	opacity:1;
+}
+
+
+/* slider */
+.ui-state-focus { background: none; }	
+	
+#sidebar1{ margin-bottom: 45px; }
+#tableCont .box { background: #fff; padding: 0 15px 15px 15px; text-align: right; border: 1px solid #ccc;  }
+#sidebar1, #sidebar1 h2 { text-align: left; }
+#sidebar1 h2 {
+	overflow:hidden;
+	margin: 0; padding: 0; 
+	-moz-box-shadow: inset   0px 0px 2px 0px #a3a3a3;
+	-webkit-box-shadow: inset 0px 0px 2px 0px #a3a3a3;
+	box-shadow: inset 0px 0px 2px 0px #a3a3a3;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5c5c5c), color-stop(1, #3d3d3d) );
+	background:-moz-linear-gradient( center top, #5c5c5c 5%, #3d3d3d 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5c5c5c', endColorstr='#3d3d3d');
+}
+
+#sidebar1 h2 {
+	
+	
+	
+	background-color:#5c5c5c;	
+	height: 20px;
+	line-height: 18px;
+	border-top:1px solid #302828;
+	border-bottom:1px solid #302828;
+	color:#e8e8e8;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-shadow:1px -1px 0 #383838;
+	text-decoration:none;
+	}
+#sidebar1 h2 input { position: absolute; }
+#sidebar1 h2 span { position: absolute; width: 125px; margin-left: 25px; } 
+#sidebar1>form>div { margin: 0 15px; }
+.hzmenu li { display: inline-block; }
+.small_15 { border: none; width: 40px; padding: 0; background: none; text-align: left; font-weight:bold;}
+.small_25_w { width: 25px; padding: 0; text-align: left; font-weight:bold;}
+
+#sidebar1 table td { padding: 3px; padding-right: 10px;  }
+#sidebar1 h2 { margin-top: 10px; font-family: 'Just Me Again Down Here'; font-weight: normal; font-size: 25px;}
+
+
+
+.twitter-share-button { margin-bottom: 1px; }
+
+.bold-box { width: 45px; background: #000; color:#FFF; float: right; padding: 1px 10px 1px 5px; margin-top: -3px;
+	background-color:#5c5c5c;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+ }
+.bold-box span { display: block; float: right; padding-top: 3px; }
+#box-menu { position: absolute; width: 550px;  }
+#box-menu>div {  border: 1px solid #666; border-top: none; background: #dcdcdc; padding: 5px;}
+#box-menu textarea { margin: 5px; width: 520px; height: 220px; }
+.hzmenu { margin: 0; padding-right: 5px; background: url(../images/getyourcode.png) 168px 3px no-repeat;}
+.hzmenu li { 
+	display: inline-block; margin-right: 5px; 
+	overflow: hidden;
+	
+	-webkit-border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-bottomleft: 7px;			
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	
+	border-right:1px solid #E6E6E6;
+	border-left:1px solid #E6E6E6;
+	border-bottom:1px solid #E6E6E6;
+	-moz-box-shadow: 0px 0px 0px 1px #383838;
+	-webkit-box-shadow: 0px 0px 0px 1px #383838;
+	box-shadow: 0px 1px 3px 0px #383838;
+}
+
+.hzmenu li a { 
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dedede), color-stop(1, #c2c2c2) );
+		background:-moz-linear-gradient( center top, #dedede 5%, #c2c2c2 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#c2c2c2');
+		background-color:#dedede;		
+		display:inline-block;
+		color:#666666;
+		font-family: Arial;		
+		font-size:15px;
+		padding: 5px 10px 3px;
+		text-decoration:none;
+		text-shadow:1px 1px 0px #e0e0e0;
+	}
+.hzmenu li a:hover { 
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #EDEDED), color-stop(1, #c2c2c2) );
+	background:-moz-linear-gradient( center top, #EDEDED 5%, #c2c2c2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#EDEDED', endColorstr='#c2c2c2');
+	background-color:#EDEDED;
+}
+
+.pageLink, .pageLink:hover, .pageLink:visited { color: #fff; }
+
+
+.theme-box div { height: 20px; margin: 0; padding:0;  }
+
+#theme1 .th_theme { background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557f) );
+					background:-moz-linear-gradient( center top, #006699 5%, #00557f 100% );
+					filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557f');
+					background-color:#006699; }
+#theme1 .th_theme>div {  width: 35px; border-right: 1px solid #0070A8; }
+#theme1 .tr_theme>div, #theme1 .tr_alt_theme>div { width: 35px; border-right: 1px solid #E1EEF4;  }
+#theme1 .tr_alt_theme { background: #E1EEF4; }
+
+
+#theme2 .th_theme { background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #991821), color-stop(1, #80141C) );
+					background:-moz-linear-gradient( center top, #991821 5%, #80141C 100% );
+					filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#991821', endColorstr='#80141C');
+					background-color:#991821; }
+#theme2 .th_theme>div {  width: 35px; border-right: 1px solid #B01C26; }
+#theme2 .tr_theme>div, #theme2 .tr_alt_theme>div { width: 35px; border-right: 1px solid #F7CDCD;  }
+#theme2 .tr_alt_theme { background: #F7CDCD; }
+
+#theme3 .th_theme { background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #36752D), color-stop(1, #275420) );
+					background:-moz-linear-gradient( center top, #36752D 5%, #275420 100% );
+					filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#36752D', endColorstr='#275420');
+					background-color:#36752D; }
+#theme3 .th_theme>div {  width: 35px; border-right: 1px solid #36752D; }
+#theme3 .tr_theme>div, #theme3 .tr_alt_theme>div { width: 35px; border-right: 1px solid #C6FFC2;  }
+#theme3 .tr_alt_theme { background: #DFFFDE; }
+
+#theme4 .th_theme { background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #652299), color-stop(1, #4D1A75) );
+					background:-moz-linear-gradient( center top, #652299 5%, #4D1A75 100% );
+					filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#652299', endColorstr='#4D1A75');
+					background-color:#652299; }
+#theme4 .th_theme>div {  width: 35px; border-right: 1px solid #714399; }
+#theme4 .tr_theme>div, #theme4 .tr_alt_theme>div { width: 35px; border-right: 1px solid #EABFFF;  }
+#theme4 .tr_alt_theme { background: #F3DEFF; }
+
+#theme5 .th_theme { background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #A65B1A), color-stop(1, #7F4614) );
+					background:-moz-linear-gradient( center top, #A65B1A 5%, #7F4614 100% );
+					filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#A65B1A', endColorstr='#7F4614');
+					background-color:#A65B1A; }
+#theme5 .th_theme>div {  width: 35px; border-right: 1px solid #BF691E; }
+#theme5 .tr_theme>div, #theme5 .tr_alt_theme>div { width: 35px; border-right: 1px solid #D9CFB8;  }
+#theme5 .tr_alt_theme { background: #F0E5CC; }
+
+#theme6 .th_theme { background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8C8C8C), color-stop(1, #7D7D7D) );
+					background:-moz-linear-gradient( center top, #8C8C8C 5%, #7D7D7D 100% );
+					filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8C8C8C', endColorstr='#7D7D7D');
+					background-color:#8C8C8C; }
+#theme6 .th_theme>div {  width: 35px; border-right: 1px solid #A3A3A3; }
+#theme6 .tr_theme>div, #theme6 .tr_alt_theme>div { width: 35px; border-right: 1px solid #DBDBDB;  }
+#theme6 .tr_alt_theme { background: #EBEBEB; }
+
+/* overall */
+.datagrid table { border-collapse: collapse; text-align: left; width: 100%; overflow: hidden; } /* DEFAULT MANDATORY EVERY TABLE */
+.datagrid { font: normal 12px/150% Arial, Helvetica, sans-serif;  /* font,font-size */
+			background: #fff; /* table-background-color */
+			border: 3px solid #069;  /* border width, border color */
+			-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; /* border-radius */ 
+			}
+
+.datagrid table td, .datagrid table th { 
+			padding: 3px 10px; } /* cellpadding */
+
+/* thead */	
+ .datagrid table thead th { 
+			/* thead-top-gradient-color, thead-lower-gradient-color */
+			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557f) );
+			background:-moz-linear-gradient( center top, #006699 5%, #00557f 100% );
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557f');
+			background-color:#006699; /* set to lower gradient color */
+			color:#ebebeb; /* header-font-color */
+			border-left: 1px solid #006699; /* thead-vert-line-size, thead-vert-line-color */
+			font-size: 15px; /* thead-font-size */
+			}
+.datagrid table thead th:first-child { border: none; /* MANDATORY */ }
+
+/* tbody */ 	
+ .datagrid table tbody td { 
+			 color: #00496B; /* tbody-color */
+			 border-left: 1px solid #E1EEF4; /* tbody-vert-line-size, tbody-vert-line-color */
+			text-align: left; /* tbody-text-align */  }
+			
+.datagrid table tbody .alt { 
+			 background: #E1EEF4; /* tbody-row-alt-background-color */ }	
+.datagrid table tbody .alt td {
+	background: #E1EEF4;
+	color: #6B332B;
+}
+.datagrid table tbody td:first-child { border: none; /* MANDATORY */ }
+
+/* tfooter */
+.datagrid table tfoot td div { 
+			border-top: 1px solid #069; /* tfoot-top-border-width, tfoot-top-border-color */
+			background: #E1EEF4; /* tfoot-background-color */
+			padding: 5px; /* tfoot-padding */}
+
+.datagrid table tfoot td { padding: 0; /* MANDATORY */ }
+
+/* paging */
+.datagrid table tfoot td ul { margin: 0; padding:0; list-style: none; text-align: right; }
+.datagrid table tfoot  li { display: inline; }
+.datagrid table tfoot li a { 
+			text-decoration: none;
+			color: #fff;
+			display: inline-block;  padding: 2px 8px; 
+			margin: 1px;
+			/*border: 1px solid #069;*/  /* border width, border color */
+			-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; /* border-radius */  
+			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557f) );
+			background:-moz-linear-gradient( center top, #006699 5%, #00557f 100% );
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557f');
+			background-color:#006699;}
+.datagrid table tfoot li .active, .datagrid table tfoot li a:hover { 
+			text-decoration: none;
+			color: #fff; 
+			-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; /* border-radius */  
+			background: none;
+			background-color:#006699;
+			}
+
+
+.datagrid { width: 535px; border: 3px solid #069;  -webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px; }
