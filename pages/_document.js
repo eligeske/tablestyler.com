@@ -8,7 +8,15 @@ class Document extends NextDocument {
 				<Head>
 					<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 					<meta name="norton-safeweb-site-verification" content="olltfqdftteezex2ahm2knzdgj6dkv-qa8dy5iejdvsfap13k5a-ubccjcgu-uwb81at4fz2h75n6hrjpxl8h40is3bzc80x5uix4ady4be3dir12du16k0pkbasi071" />
-					
+					<script type="text/javascript" dangerouslySetInnerHTML={{
+						__html: `
+							(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+							new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+							j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+							'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+							})(window,document,'script','dataLayer','GTM-NRWL9T2');
+						`,
+					}}></script>
 
 					<link rel="stylesheet" href="css/custom-theme/jquery-ui-1.8.19.custom.css" type="text/css" />
 					<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>

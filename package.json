@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o docs",
+    "build": "next build && next export -o docs && touch ./docs/.nojekyll && echo 'tablestyler.com' > ./docs/CNAME",
     "start": "next start",
     "start:local": "npx http-server ./docs"
   },
